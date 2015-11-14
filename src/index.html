@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- lb music-->
 <head>
+<script src="js/search.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcAt-uITrEm4tQAVF7BemOjIK5ceKVAEA">
 </script>
@@ -30,7 +31,7 @@ background-size: 100%;
 	
 	<p>Welcome to Scenic Music. Tell us your location and we will generate an unique playlist for you.
 	<p><input type="search" id="searchbox">
-	<button onclick="do_things()">Search</button></input>
+	<button onclick="getLocation()">Search</button></input>
 	<div id ="error"></div>
 <!--<script>  
 window.location.assign("http://www.w3schools.com")
