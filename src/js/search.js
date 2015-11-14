@@ -48,6 +48,7 @@ function getLocation(){
                 dataType: 'json',
                 success: function(data){
                   loctype = data.subcategory.;
+                  alert(data);
                 },
                 error: function (msg) {
       						var errOutput = document.getElementById('error');
