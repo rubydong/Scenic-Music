@@ -1,0 +1,2 @@
+serviceClass: com.lbmusic.backend.client.GreetingService
+path: B3744B277A5D78A84105611073F5965F.gwt.rpc
