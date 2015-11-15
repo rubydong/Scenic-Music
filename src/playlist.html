@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<script src="js/spotify.js"></script>
+
+<style>
+@import url(styling.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    padding: 20px;
+}
+
+.cover {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    border: 2px solid #fff;
+}
+
+.cover:hover {
+    cursor: pointer;
+}
+
+.cover.playing {
+    border: 2px solid #e45343;
+}
+
+.spotify-button {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body onload="searchAlbums(location.hash)">
+<nav><ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/">How it works</a></li>
+  <li><a href="/">About us</a></li>
+  <li><a href="/">Special thanks</a></li>
+</ul>
+</nav>
+
+
+<script id="results-template" type="text/x-handlebars-template">
+    {{#each albums.items}}
+    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"><a href="{{external_urls.spotify}}"><div class="spotify-button"><img src="https://developer.spotify.com/wp-content/uploads/2014/06/play_on_spotify-green.png" /></div></a></div>
+    {{/each}}
+</script>
+
+
+</body>
+</html>
