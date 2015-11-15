@@ -42,7 +42,8 @@ function getLocation(){
 									success: function(response){
 										loctype = response.attraction_types[0].name;
 										console.log("Response success:",response.attraction_types[0].name);
-										window.location.replace("playlist.html#" + loctype);
+										displayPlaylist(loctype);
+										//window.location.replace("playlist.html#" + loctype);
 									},
 									error: function (msg) {
 										console.log("Response failure:", msg);
