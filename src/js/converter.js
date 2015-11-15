@@ -11,7 +11,7 @@ function generalize (subcat) {
     case "military museums":
     case "maritime museums":
     case "history museums":
-    case "children's museums":
+    case "children\'s museums":
     case "wax museums":
     case "art museums":
     case "transportation museums":
