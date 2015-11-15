@@ -45,82 +45,89 @@ function generalize (subcat) {
       return "workout"
     //-----------------------------
     //----------------------------- Nature
-    case "reservations":
     case "national parks":
     case "nature centers":
     case "nature reserves":
-    case "nature trails":
     case "waterfalls":
     case "waterways":
-    case "trails":
     case "trams":
     case "urban parks":
     case "valleys":
     case "volcanos":
     case "state parks":
     case "rivers":
-    case "road biking trails":
     case "scenic drives":
     case "scenic railroads":
-    case "scenic/historic walking areas":
     case "ponds":
     case "parks":
     case "lakes":
     case "hot springs/geysers":
     case "islands":
     case "forests":
-    case "hiking trails":
     case "deserts":
     case "dams ":
     case "caverns/caves":
     case "bays":
-    case "wildlife parks":
     case "ranches":
     case "reefs":
+    case "farms":
+      return "soothing"
+      
+    case "all terrain vehicle trails":
+    case "biking trails":   
     case "motorcycle trails":
     case "mountain biking trails":
     case "off road vehicle trails ":
+    case "hiking trails":
+    case "road biking trails":
+    case "nature trails":
+    case "trails":
+    case "jogging paths/tracks":
     case "equestrian trails":
-    case "farms":
-    case "all terrain vehicle trails":
-    case "biking trails":
-    case "Hotel":
-    case "Bed and Breakfast":
-    case "Specialty Lodging":
-      return "soothing"
+    case "scenic/historic walking areas":
+      	return "workout music"
     //----------------------------------
     //---------------------------------- Entertainment
-    case "zoos":
-    case "water parks":
-    case "theater districts":
-    case "theaters":
+  
     case "sports camps/clinics":
     case "sports complexes":
     case "ski areas":
     case "snowboard ski areas":
     case "race car tracks":
-    case "performances":
     case "playgrounds":
-    case "observation decks/towers":
-    case "observatories/planetariums":
-    case "movie theaters":
     case "malls":
     case "golf courses":
-    case "game/entertainment centers":
-    case "dinner theaters":
-    case "disney":
-    case "dog tracks ":
     case "downhill ski areas":
     case "bowling alleys":
     case "arenas/stadiums/fields":
-    case "aquariums":
-    case "amusement/theme parks":
     case "cross-country ski areas ":
-    case "concerts":
+      return "motivation"
+      
+    case "observation decks/towers":
+    case "observatories/planetariums":
+      	return "elevator music"
+      
+    case "dinner theaters":
+    case "movie theaters":
+    case "theater districts":
+    case "theaters":
+      	return "opera"
+    
+    case "wildlife parks":
+    case "zoos":
     case "horse tracks":
     case "horseback riding stables":
-    case "jogging paths/tracks":
-      return "motivation"
+    case "dog tracks ":
+    case "aquariums":
+      return "neon trees"
+    
+    case "disney":
+    case "water parks":
+    case "concerts":
+    case "game/entertainment centers":
+    case "amusement/theme parks":
+    case "performances":
+      return "pop rock"
     //----------------------------------Mystic
     case "ancient ruins":
     case "castles":
@@ -164,7 +171,7 @@ function generalize (subcat) {
     //----------------------------------
     case "wineries":
     case "breweries":
-      return ""
+      return "ambient"
     //---------------------------------- shopping
     case "town centers/squares/plazas":
     case "shops":
@@ -199,15 +206,21 @@ function generalize (subcat) {
     //----------------------------------
     //---------------------------------- tourist
     case "resort communities":
-    case "onsen":
-    case "onsen resort":
     case "military bases/facilities":
     case "lighthouses":
     case "landmarks/points of interest":
     case "battlefields":
     case "lookouts":
     case "missions":
+    case "Hotel":
+    case "Bed and Breakfast":
+    case "Specialty Lodging":
+    case "reservations":
       return "adventure"
+      
+  	case "onsen":
+    case "onsen resort":
+    	return "japanese"
     //----------------------------------
     //----------------------------------
     case "cemeteries":
