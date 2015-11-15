@@ -1,7 +1,3 @@
-/*
-Developed by Ryan O'Day and Jack Zheng
-HackRPI 2015 Project
-*/
 function generalize (subcat) {
 	switch (subcat) {
     //------------------- Museums
@@ -272,8 +268,5 @@ function generalize (subcat) {
     //----------------------------------
     //----------------------------------
     //----------------------------------
-      
-      
-    
 	}
 }
