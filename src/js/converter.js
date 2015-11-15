@@ -2,9 +2,9 @@
 Developed by Ryan O'Day and Jack Zheng
 HackRPI 2015 Project
 */
-function generalize (subcat) { 
+function generalize (subcat) {
 	switch (subcat) {
-    //------------------- Museums 
+    //------------------- Museums
     case "art galleries":
     case "science museums":
     case "museums":
@@ -84,9 +84,9 @@ function generalize (subcat) {
     case "farms":
     case "all terrain vehicle trails":
     case "biking trails":
-    Case "Hotel":
-    Case "Bed and Breakfast":
-    Case "Specialty Lodging":
+    case "Hotel":
+    case "Bed and Breakfast":
+    case "Specialty Lodging":
       return "soothing"
     //----------------------------------
     //---------------------------------- Entertainment
@@ -165,7 +165,7 @@ function generalize (subcat) {
     case "wineries":
     case "breweries":
       return ""
-    //---------------------------------- shopping 
+    //---------------------------------- shopping
     case "town centers/squares/plazas":
     case "shops":
     case "specialty shops":
@@ -230,17 +230,17 @@ function generalize (subcat) {
     case "bridges":
     case "ferries":
       return "background music"
-    //----------------------------------  
-    Case "Sit Down":
-Case "Cafe":
-	return "jazz"
-Case "Neighborhoods":
-Case "Islands":
-Case "Fast Food":
-Case "Deli":
-	return "elevator music"
-Case "Attraction"
-Case "Outdoors":
-	return "pop"
+    //----------------------------------
+    case "Sit Down":
+    case "Cafe":
+	    return "jazz"
+    case "Neighborhoods":
+    case "Islands":
+    case "Fast Food":
+    case "Deli":
+	    return "elevator music"
+    case "Attraction":
+    case "Outdoors":
+	    return "pop"
 	}
 }
