@@ -38,8 +38,8 @@
 
 Welcome to Scenic Music. Tell us your location and we will generate unique playlists just for you.<p>
 
-<input type="search" id="searchbox"></input>
-		<button onclick="getLocation()">Search</button>
+<input type="search" onkeydown="if (event.keyCode == 13) document.getElementById('buttonsearch').click()"/>
+<input type="button" id="buttonsearch" value="Search" onclick="getLocation()" />
 		<div id ="error"></div>
 	</body>
-</html>
+</html>	
