@@ -1,8 +1,13 @@
+
+if(document.getElementById('results-template').innerHTML != null) {
 var templateSource = document.getElementById('results-template').innerHTML,
     template = Handlebars.compile(templateSource),
     resultsPlaceholder = document.getElementById('results'),
     playingCssClass = 'playing',
     audioObject = null;
+}
+else 
+    console.log("error");
 
 var fetchTracks = function (albumId, callback) {
     $.ajax({
