@@ -1,5 +1,5 @@
-function displayPlaylist(){
- 	var subc = window.location.hash.substr(1);
+function displayPlaylist(src){
+ 	var subc = src;
 	var searchquery = generalize(subc);
   var spotifyurl = "https://api.spotify.com/v1/search?q=" + searchquery + "&type=playlist&market=US";
    $.ajax({
