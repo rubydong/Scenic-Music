@@ -40,13 +40,13 @@ function getLocation(){
 									url: caturl,
 									dataType: 'json',
 									success: function(response){
-										if (response.category.name.equals("hotel")){
+										if (response.category.name == "hotel"){
 											console.log("Response was a hotel.");
 											loctype = response.subcategory[0].localized_name;
-										}else if (response.category.name.equals("restaurant")){
+										}else if (response.category.name == "restaurant"){
 											console.log("Response was a restaurant.");
 											loctype = response.subcategory[0].localized_name;
-										}else if (response.category.name.equals("attraction")){
+										}else if (response.category.name == "attraction"){
 											console.log("Response was an attraction.");
 											loctype = response.attraction_types[0].name;
 										}
