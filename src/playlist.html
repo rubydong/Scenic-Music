@@ -2,6 +2,7 @@
 <head>
 <script src="js/converter.js"></script>
 <script src="js/spotify.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <style>
 @import url(styling.css);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -20,11 +21,6 @@
 
 <div id="output"></div>
 
-<script id="results-template" type="text/x-handlebars-template">
-    {{#each albums.items}}
-    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"><a href="{{external_urls.spotify}}"><div class="spotify-button"><img src="https://developer.spotify.com/wp-content/uploads/2014/06/play_on_spotify-green.png" /></div></a></div>
-    {{/each}}
-</script>
 
 
 </body>
