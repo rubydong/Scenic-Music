@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<script src="js/search.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcAt-uITrEm4tQAVF7BemOjIK5ceKVAEA">
+	</script>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+		@import url(styling.css);
+
+		img {width: 150px;
+		height:150px;
+		transition: opacity 0.5s ease-in-out;
+		padding: 1px;	   
+		border: solid 1px #D6D6D6;	
+		border-radius: 100em;
+		padding: 10px;}
+
+		img:hover{
+		opacity:0.8;}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="functionality.html">How it works</a></li>
+			<li><a href="thanks.html">Special thanks</a></li>
+		</ul>
+	</nav>
+</div>
+
+
+<h1> The making of Scenic Music</h1>
+<p> <img src="cherry blossom.png"> <img src="cloud.jpg"> <img src="flowercoffee.jpg"><img src="amusement.jpg"> <img src="ocean.jpg">
+						<p> Once the user inputs an address or a general location, we used google's Geocoder api in order to get the coordinates (latitude and longitude) of that location.
+							Then, we plugged those coordinates into tripadvisor's api to retrieve the location id. From that we're able to see the description of the place searched up.
+							Using that we inserted it into the Spotify's api in order to generate music relevant and appropriate to the scenery, hence our name Scenic Music.
+						</body>
+					</html>
