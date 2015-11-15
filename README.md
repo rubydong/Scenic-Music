@@ -1,8 +1,6 @@
 # ScenicMusic
 HackRPI Project
 2015
-#Website
-[http://wwww.scenicmusic.org](www.scenicmusic.org)
 #Awards applying for
 * Best Web Application Hack
 * Most Innovative Use of Audio & Music
