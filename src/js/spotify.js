@@ -11,11 +11,8 @@ function displayPlaylist(){
 										console.log("Response success:",response);
 										var array = response.playlists.items;
 										var opls = "";
-										for (var i = 0;i<array.length;i++){
-										  var item = array[i];
-										  opls += "<a href=\"" + item.external_urls.spotify + "\" target=\"_blank\" <img src=\"" + item.images[1].url + "\" alt=\"" + item.images[1].url + " width=200 height=200></a>";
-										}
-										document.getElementById("output").innerHTML = opls;
+										var item = array[0];
+										window.open(item.external_urls.spotify);
 									},
 									error: function (msg) {
 										console.log("Response failure:", msg);
