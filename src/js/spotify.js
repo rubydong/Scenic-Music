@@ -1,55 +1,17 @@
-
-function test () {
-var templateSource = document.getElementById('results-template').innerHTML,
-    template = Handlebars.compile(templateSource),
-    resultsPlaceholder = document.getElementById('results'),
-    playingCssClass = 'playing',
-    audioObject = null;
+function displayPlaylists(){
+ 	var subc = window.location.hash.substr(1); 
+	var searchquery = generalize(subc);
+  var spotifyurl = "https://api.spotify.com/v1/search?q=" + searchquery + "&type=playlist&market=US";
+   $.ajax({
+									type: "GET",
+									cache: true,
+									url: spotifyurl,
+									dataType: 'json',
+									success: function(response){
+										console.log("Response success:",response);
+									},
+									error: function (msg) {
+										console.log("Response failure:", msg);
+									}
+								});
 }
-
-var fetchTracks = function (albumId, callback) {
-    $.ajax({
-        url: 'https://api.spotify.com/v1/albums/' + albumId,
-        success: function (response) {
-            callback(response);
-        }
-    });
-};
-
-var searchAlbums = function (query) {
-    $.ajax({
-        url: 'https://api.spotify.com/v1/search',
-        data: {
-            q: 'artist:' + query,
-            type: 'album',
-            market: "US"
-        },
-        success: function (response) {
-            resultsPlaceholder.innerHTML = template(response);
-        }
-    });
-};
-
-results.addEventListener('click', function(e) {
-    var target = e.target;
-    if (target !== null && target.classList.contains('cover')) {
-        if (target.classList.contains(playingCssClass)) {
-            audioObject.pause();
-        } else {
-            if (audioObject) {
-                audioObject.pause();
-            }
-            fetchTracks(target.getAttribute('data-album-id'), function(data) {            
-                audioObject = new Audio(data.tracks.items[0].preview_url);
-                audioObject.play();
-                target.classList.add(playingCssClass);
-                audioObject.addEventListener('ended', function() {
-                    target.classList.remove(playingCssClass);
-                });
-                audioObject.addEventListener('pause', function() {
-                    target.classList.remove(playingCssClass);
-               });
-            });
-        }
-    }
-});
