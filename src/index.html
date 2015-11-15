@@ -1,41 +1,31 @@
 <!DOCTYPE html>
-<!-- lb music-->
 <head>
-<script src="js/search.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcAt-uITrEm4tQAVF7BemOjIK5ceKVAEA">
-</script>
-<style>
-@import url(styling.css);
-body{
-background-image: url("pattern.png");
-background-size: 100%;
-}
-</style>
+	<script src="js/search.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcAt-uITrEm4tQAVF7BemOjIK5ceKVAEA">
+	</script>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+	@import url(styling.css);
+	</style>
 </head>
 
 <body>
-<nav><ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/">How it works</a></li>
-  <li><a href="/">About us</a></li>
-  <li><a href="/">Special thanks</a></li>
-</ul>
-</nav>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/">How it works</a></li>
+			<li><a href="/">About us</a></li>
+			<li><a href="/">Special thanks</a></li>
+		</ul>
+	</nav>
+</div>
 
 
-
-
-	<h1> Scenic Music </h1>
-	<hr>
-	
-	<p>Welcome to Scenic Music. Tell us your location and we will generate an unique playlist for you.</p>
-	<input type="search" id="searchbox"></input>
-	<button onclick="getLocation()">Search</button>
-	<div id ="error"></div>
-<!--<script>  
-window.location.assign("http://www.w3schools.com")
- </script>-->
-
-</body>
+<h1> Scenic Music </h1>
+<p>Welcome to Scenic Music. Tell us your location and we will generate an unique playlist for you.
+	<p><input type="search" id="searchbox"></input>
+		<button onclick="getLocation()">Search</button>
+		<div id ="error"></div>
+	</body>
 </html>
