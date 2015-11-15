@@ -84,6 +84,9 @@ function generalize (subcat) {
     case "farms":
     case "all terrain vehicle trails":
     case "biking trails":
+    Case "Hotel":
+    Case "Bed and Breakfast":
+    Case "Specialty Lodging":
       return "soothing"
     //----------------------------------
     //---------------------------------- Entertainment
@@ -228,5 +231,16 @@ function generalize (subcat) {
     case "ferries":
       return "background music"
     //----------------------------------  
+    Case "Sit Down":
+Case "Cafe":
+	return "jazz"
+Case "Neighborhoods":
+Case "Islands":
+Case "Fast Food":
+Case "Deli":
+	return "elevator music"
+Case "Attraction"
+Case "Outdoors":
+	return "pop"
 	}
 }
