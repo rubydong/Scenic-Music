@@ -40,10 +40,17 @@ function getLocation(){
 									url: caturl,
 									dataType: 'json',
 									success: function(response){
-										loctype = response.attraction_types[0].name;
-										console.log("Response success:",response.attraction_types[0].name);
+										if (response.category.name.equals("hotel")){
+											console.log("Response was a hotel.");
+											loctype = response.subcategory[0].localized_name;
+										}else if (response.category.name.equals("restaurant")){
+											console.log("Response was a restaurant.");
+											loctype = response.subcategory[0].localized_name;
+										}else if (response.category.name.equals("attraction")){
+											console.log("Response was an attraction.");
+											loctype = response.attraction_types[0].name;
+										}
 										displayPlaylist(loctype);
-										//window.location.replace("playlist.html#" + loctype);
 									},
 									error: function (msg) {
 										console.log("Response failure:", msg);
