@@ -1,26 +1,30 @@
 
 		h1 {font-family: 'Open Sans';
-		color: white;
-		font-size: 100px;
+		color: #99C3CC;
+		z-index: -1;
+		font-size: 75px;
 		}
 
 		body {
 		font-family: 'Open Sans';
-		text-align:center;
-		background-image: url("pattern.png");
-		background-size: 100%;
-		color: #C6BEB1;}
+		text-align:center;	
+		background-image: url("blizzard.png");
+		background-repeat: repeat;
+		color: #a1a1a1;
+		margin-left: 10%;
+		margin-right: 10%;}
 
 		a {
 		text-decoration: none;
 		font-weight: bold;
-		color: #C6BEB1;
+		color: #B5B5B5;
 		font-size: 12px;
 		text-transform: uppercase;
 		padding: 10px;
 		}
+		
 		a:hover{
-		color: white;
+		color:#99C3CC;
 		transition: all 0.5s ease-in-out;
 		}
 
@@ -38,18 +42,19 @@
 
 		input[type="search"]{
 		color: #a1a1a1;
-		height: 25px;
+		height: 30px;
+		width: 30%;
 		border-radius: 2em 3em 2em 3em;
 		font-family: 'Open Sans';}
 
 		input[type="search"]:focus {outline: 0;}
 
 		button{
-		background-color: #a1a1a1;
-		width: 110px;
-		height: 25px;
+		background-color: white;
+		width: 7%;
+		height: 30%;
 		font-size: 9px;
-		color: #FFFFFF;
+		color: #a1a1a1;
 		text-decoration:none;
 		text-transform: uppercase;
 		text-align: center;
