@@ -44,13 +44,13 @@
 		color: #a1a1a1;
 		height: 30px;
 		width: 30%;
-		border-radius: 2em 3em 2em 3em;
+		border-radius: 2em 4em 2em 4em;
 		border: 1px solid #a1a1a1;
 		font-family: 'Open Sans';}
 
 		input[type="search"]:focus {outline: 0;}
 
-		button{
+		input[type="button"]{
 		background-color: white;
 		width: 7%;
 		height: 30px;
@@ -60,12 +60,13 @@
 		text-transform: uppercase;
 		text-align: center;
 		line-height: 20px;
-		border-radius: 2em 5em 2em 5em;
+		border-radius: 2em 4em 2em 4em;
 		border: 1px solid #a1a1a1;
 		}
-
-		button:focus {outline:0;}
-
+		
+		input[type="button"]:hover{color:#7f7F7F;}
+		input[type="button"]:focus {outline:0;}
+			
 		::selection {
 		color: #707070; 
 		}		
