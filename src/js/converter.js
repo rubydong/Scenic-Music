@@ -5,42 +5,58 @@ HackRPI 2015 Project
 function generalize (subcat) {
 	switch (subcat) {
     //------------------- Museums
-    case "art galleries":
-    case "science museums":
     case "museums":
     case "military museums":
     case "maritime museums":
-    case "history museums":
     case "children\'s museums":
     case "wax museums":
-    case "art museums":
     case "transportation museums":
     case "sports museums":
     case "specialty museums":
-    case "natural history museums":
     case "museum complexes":
       return "beethoven"
+      
+    case "science museums":
+    case "natural history museums":
+    case "history museums":
+    	return "mozart"
+      
+    case "art museums":
+    case "art galleries":
+      return "yiruma"
+    
     //---------------------------
     //--------------------------Bars/Clubs
     case "bars/clubs":
     case "cigar bars":
       return "soothing"
+      
     case "gay bars":
       return "disco"
+      
     case "blues bars":
       return "blues"
+      
     case "country western bars":
       return "country"
+      
     case "jazz bars":
+    case "Sit Down":
+    case "Cafe":
       return "jazz"
+      
     case "karaoke bars":
       return "pop"
+      
     case "piano bars":
       return "piano"
+      
     case "comedy clubs":
       return "jazz"
+      
     case "dance clubs/discos ":
       return "edm"
+      
     case "health clubs":
       return "workout"
     //-----------------------------
@@ -48,30 +64,33 @@ function generalize (subcat) {
     case "national parks":
     case "nature centers":
     case "nature reserves":
-    case "waterfalls":
-    case "waterways":
     case "trams":
     case "urban parks":
     case "valleys":
     case "volcanos":
     case "state parks":
-    case "rivers":
     case "scenic drives":
     case "scenic railroads":
-    case "ponds":
     case "parks":
-    case "lakes":
-    case "hot springs/geysers":
     case "islands":
     case "forests":
     case "deserts":
     case "dams ":
     case "caverns/caves":
-    case "bays":
     case "ranches":
     case "reefs":
     case "farms":
       return "soothing"
+      
+    case "bays":
+    case "lakes":
+    case "hot springs/geysers":
+    case "ponds":
+    case "rivers":
+    case "waterfalls":
+    case "waterways":
+    	return "jurassic park"
+    
       
     case "all terrain vehicle trails":
     case "biking trails":   
@@ -85,7 +104,7 @@ function generalize (subcat) {
     case "jogging paths/tracks":
     case "equestrian trails":
     case "scenic/historic walking areas":
-      	return "workout music"
+      	return "running music"
     //----------------------------------
     //---------------------------------- Entertainment
   
@@ -127,6 +146,8 @@ function generalize (subcat) {
     case "game/entertainment centers":
     case "amusement/theme parks":
     case "performances":
+    case "Attraction":
+    case "Outdoors":
       return "pop rock"
     //----------------------------------Mystic
     case "ancient ruins":
@@ -171,6 +192,9 @@ function generalize (subcat) {
     //----------------------------------
     case "wineries":
     case "breweries":
+    case "ships":
+    case "bridges":
+    case "ferries":
       return "ambient"
     //---------------------------------- shopping
     case "town centers/squares/plazas":
@@ -186,7 +210,6 @@ function generalize (subcat) {
     //----------------------------------Elevator
     case "architectural buildings":
     case "civic centers":
-    case "coffeehouses":
     case "factory tours":
     case "public transportation systems":
     case "tourist/visitor centers":
@@ -198,7 +221,14 @@ function generalize (subcat) {
     case "convention centers":
     case "streets":
     case "neighborhoods":
+    case "Neighborhoods":
+    case "Islands":
+    case "Fast Food":
+    case "Deli":
       return "elevator"
+      
+    case "coffeehouses":
+    	return "coffeehouse music"
     //----------------------------------
     //----------------------------------
     case "casinos":
@@ -209,7 +239,6 @@ function generalize (subcat) {
     case "military bases/facilities":
     case "lighthouses":
     case "landmarks/points of interest":
-    case "battlefields":
     case "lookouts":
     case "missions":
     case "Hotel":
@@ -218,13 +247,16 @@ function generalize (subcat) {
     case "reservations":
       return "adventure"
       
+    case "battlefields":
+      return "battle" 
+      
   	case "onsen":
     case "onsen resort":
-    	return "japanese"
+    	return "traditional"
     //----------------------------------
     //----------------------------------
     case "cemeteries":
-      return "calm"
+      return "ominous"
     //----------------------------------
     //----------------------------------
     case "beaches":
@@ -236,24 +268,12 @@ function generalize (subcat) {
     case "ghost towns":
     case "mines":
     case "old jails":
-      return "ominous"
+      return "thriller"
     //----------------------------------
     //----------------------------------
-    case "ships":
-    case "bridges":
-    case "ferries":
-      return "background music"
     //----------------------------------
-    case "Sit Down":
-    case "Cafe":
-	    return "jazz"
-    case "Neighborhoods":
-    case "Islands":
-    case "Fast Food":
-    case "Deli":
-	    return "elevator music"
-    case "Attraction":
-    case "Outdoors":
-	    return "pop"
+      
+      
+    
 	}
 }
