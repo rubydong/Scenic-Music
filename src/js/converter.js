@@ -52,7 +52,7 @@ function generalize (subcat) {
     case "nature trails":
     case "waterfalls":
     case "waterways":
-    case "trails"
+    case "trails":
     case "trams":
     case "urban parks":
     case "valleys":
