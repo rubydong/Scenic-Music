@@ -9,3 +9,5 @@ HackRPI Project
 * Best Domain
 * Best Use of Google API
 * Best Beginner Hack
+#Awards Won
+* Most Polished App
