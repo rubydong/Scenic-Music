@@ -4,8 +4,8 @@ This website was designed for HackRPI 2015. It was a fun experience and the outc
 #Awards Won
 * Most Polished App
 
-#Notice
-The images used in the website are not included in this repo.
-
 #Devpost
-[Here is the link to the project submission page](http://devpost.com/software/scenicmusic)
+[Here] (http://devpost.com/software/scenicmusic) is the link to the project submission page]
+
+#Check it out
+Click [here] (http://ic.stonybrook.edu/Stu/rudong/scenicmusic/home.html) if you want to try it yourself!
