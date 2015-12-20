@@ -1,14 +1,5 @@
 # ScenicMusic
-HackRPI Project
-2015
-#Awards applying for
-* Best Web Application Hack
-* Most Innovative Use of Audio & Music
-* Best Microsoft Hack
-* Best use of TripAdvisor API
-* Best Domain
-* Best Use of Google API
-* Best Beginner Hack
+This website was designed for HackRPI 2015. It was a fun experience and the outcome was a website that will generate the perfect playlist for you based on your location. The more specific you are, the more accurate it will be.
 
 #Awards Won
 * Most Polished App
