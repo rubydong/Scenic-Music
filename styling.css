@@ -1,0 +1,78 @@
+
+h1 {font-family: 'Open Sans';
+color: #99C3CC;
+z-index: -1;
+font-size: 75px;
+}
+
+body {
+font-family: 'Open Sans';
+text-align:center;	
+background-image: url("blizzard.png");
+background-repeat: repeat;
+color: #a1a1a1;
+margin-left: 10%;
+margin-right: 10%;}
+
+a {
+text-decoration: none;
+font-weight: bold;
+color: #B5B5B5;
+font-size: 12px;
+text-transform: uppercase;
+padding: 10px;
+}
+
+a:hover{
+color:#99C3CC;
+transition: all 0.9s ease-in-out;
+
+transform: rotateY(180deg);
+
+}
+
+nav {
+text-align:right;
+margin:0 auto;}
+
+ul {  
+list-style-type: none;
+margin: 0;
+padding: 0;}
+
+li {
+display:inline;}
+
+input[type="search"]{
+color: #a1a1a1;
+height: 30px;
+width: 30%;
+border-radius: 2em 4em 2em 4em;
+border: 1px solid #a1a1a1;
+font-family: 'Open Sans';}
+
+input[type="search"]:focus {outline: 0;}
+
+input[type="button"]{
+background-color: white;
+width: 7%;
+height: 30px;
+font-size: 9px;
+color: #a1a1a1;
+text-decoration:none;
+text-transform: uppercase;
+text-align: center;
+line-height: 20px;
+border-radius: 2em 4em 2em 4em;
+border: 1px solid #a1a1a1;
+}
+
+input[type="button"]:hover{color:#9CC1BE;}
+input[type="button"]:active{color: #42707A;}
+input[type="button"]:focus {outline:0;}
+
+::selection {
+color: #99C3CC; 
+}		
+
+b {color: #99C3CC;}
