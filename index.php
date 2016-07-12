@@ -1,5 +1,5 @@
 <?php
 
-header('location: home.html');
+header('location: index.html');
 
 ?>
