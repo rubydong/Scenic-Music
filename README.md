@@ -7,4 +7,4 @@ This website was designed for HackRPI 2015. It was a fun experience and the outc
 <p align="center">Most Polished App
 
 #Check it out
-<p align="center">Click [here] (http://iscreamforuby.github.io/Scenic-Music/) if you want to try it yourself! Unfortunately the api keys expired after the hackathon, so all that remains is the front end. 
+<p align="center">Click [here] (http://rubydong.github.io/Scenic-Music/) if you want to try it yourself! Unfortunately the api keys expired after the hackathon, so all that remains is the front end. 
