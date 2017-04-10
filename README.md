@@ -6,5 +6,7 @@ This website was designed for HackRPI 2015. It was a fun experience and the outc
 #Award Won
 Most Polished App
 
+<p>
+
 #Check it out
-Click [here] (http://rubydong.github.io/Scenic-Music/) if you want to try it yourself! Unfortunately the api keys expired after the hackathon, so all that remains is the front end.
+Click ![here] (http://rubydong.github.io/Scenic-Music/) if you want to try it yourself! Unfortunately the api keys expired after the hackathon, so all that remains is the front end.
