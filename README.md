@@ -8,4 +8,4 @@ Most Polished App
 
 
 # Check it out
-Click ![here](http://rubydong.github.io/Scenic-Music/) if you want to try it yourself! Unfortunately the api keys expired after the hackathon, so all that remains is the front end.
+Click [here](http://rubydong.github.io/Scenic-Music/) if you want to try it yourself! Unfortunately the api keys expired after the hackathon, so all that remains is the front end.
